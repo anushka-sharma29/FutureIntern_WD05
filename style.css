@@ -1,0 +1,104 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #007bff;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    width: calc(50% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#addTaskBtn {
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+#addTaskBtn:hover {
+    background-color: #0056b3;
+}
+
+.tasks-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.task-section {
+    width: 48%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button.completeBtn, button.deleteBtn, button.editBtn {
+    margin-left: 5px;
+    background: #6c757d;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button.completeBtn:hover, button.deleteBtn:hover, button.editBtn:hover {
+    background: #495057;
+}
+
+button.completeBtn {
+    background: #28a745;
+}
+
+button.completeBtn:hover {
+    background: #218838;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+}
